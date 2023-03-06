@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,85 @@
     <!-- external css file -->
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <title>E-mail</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="col-md-2">
-
+        <div class="col-md-2 left-section-background">
+            <div class="d-flex">
+                <img class="img" src="./images/user.png" alt="">
+                <p class="text-white">Welcome, <br>Manik Saha</p>
+            </div>
+            <button class="btn btn-warning w-100"><i class="bi bi-pencil-square"></i> Compose</button>
+            <!-- left section -->
+            <div class="left-sec-btn">
+                <button class="options-btn" href=""><i class="bi bi-envelope"></i> Inbox</button><br>
+                <button class="options-btn" href=""><i class="bi bi-box-arrow-in-right"></i> Sent</button><br>
+                <button class="options-btn" href=""><i class="bi bi-distribute-vertical"></i> Draft</button><br>
+                <button class="options-btn" href=""><i class="bi bi-braces-asterisk"></i> Important</button><br>
+                <button class="options-btn" href=""><i class="bi bi-trash"></i> Trash</button><br>
+            </div>
+        </div>
+        <!-- middle section -->
+        <div class="col-md-4 section-border">
+            <!-- search -->
+            <div class="search-div">
+                <input type="search" placeholder="Search"> <i class="bi bi-search"></i>
+            </div>
+            <button class="mail-overview-section">
+                <div class="mail-title-div">
+                    <p class="mail-title">Linked In</p>
+                    <p>You Have a new message</p>
+                </div>
+            </button>
+            <button class="mail-overview-section">
+                <div class="selected-mail-title-div">
+                    <p class="mail-title">Linked In</p>
+                    <p>You Have a new message</p>
+                </div>
+            </button>
+            <button class="mail-overview-section">
+                <div class="mail-title-div">
+                    <p class="mail-title">Linked In</p>
+                    <p>You Have a new message</p>
+                </div>
+            </button>
+        </div>
+        <!-- mail details section -->
+        <div class="col-md-6 section-border">
+            <div class="mail-details-background">
+                <p class="mail-subject">Your Project due date is tomorrow</p>
+            </div>
+            <div class="mail-details-background">
+                <p>
+                    WordPress.​com is ultra-flexible and infinitely extensible, and with access to over 50,000 plugins
+                    available to users on the Business plan and above, there’s no limit to what you can create.
+                    Upgrade your site to unlock an entire universe of integrations and add-ons. With these resources at
+                    your fingertips, you’ll have everything need to build an amazing website, reach your audience, and
+                    grow your brand.
+                </p>
+                <div class="div-border mail-details-background">
+                    <textarea class="w-100" placeholder="Reply here" rows="3"></textarea>
+                    <div class="mail-reply-section">
+                        <label for="inputTag">
+                            <i class="bi bi-folder file-input-icon"></i>
+                            <input id="inputTag" type="file">
+                        </label>
+                        <!-- reply button -->
+                        <button class="btn btn-warning">Reply</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
