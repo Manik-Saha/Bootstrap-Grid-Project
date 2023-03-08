@@ -1,11 +1,5 @@
-.container {
-    display: flex;
-}
-
-@media(max-width:767px) {
-    .container {
-        display: block;
-    }
+.navbar {
+    background-color: #050930;
 }
 
 .left-section-background {
@@ -30,6 +24,15 @@
 .text-white {
     color: white;
     padding-left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    margin-top: .7rem;
+}
+
+@media(max-width:550px) {
+    .text-white {
+        display: none;
+    }
 }
 
 .options-btn {
@@ -37,39 +40,44 @@
     color: white;
     border: none;
     font-size: 1.1em;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+.inbox {
+    width: 100%;
+    border-radius: 5px;
+    background: #0a125b;
+    color: white;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    text-align: left;
 }
 
 .options-btn:hover {
     width: 100%;
-    border-radius: 8px;
-    background: rgb(49, 61, 221);
+    border-radius: 5px;
+    background: #0a125b;
     color: white;
     border: none;
-    padding-top: 3px;
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    text-align: left;
 }
 
 .left-sec-btn {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 input[type="search"] {
-    width: 90%;
-    border: none;
-    border-radius: 15px;
-}
-
-input[type="search"]:focus {
-    border: none !important;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
 }
 
 .search-div {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    border-radius: 15px;
-
 }
 
 .mail-title-div {
@@ -129,6 +137,10 @@ label {
     border-bottom: 1px solid white;
 }
 
+.mail-overview-section:hover {
+    transform: scale(1.05);
+}
+
 .mail-details-background {
     background-color: #EEEEEE;
     border-radius: 5px;
@@ -136,10 +148,24 @@ label {
     padding: .3rem;
 }
 
-.file-input-icon{
+.file-input-icon {
     background-color: #050930;
     color: white;
     padding: .5rem;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+.modal-header {
+    background-color: #050930;
+    color: white;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
 }
